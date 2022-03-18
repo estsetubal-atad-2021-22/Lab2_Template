@@ -80,7 +80,7 @@ void printArray(int arr[], int arrLength) {
 
 :bulb: Na linguagem C, os parâmetros que representam matrizes têm de ser representados na forma e ordem indicadas abaixo.
 
-8. No módulo "arrays" defina e implemente a função `int matrixMaximumIndex(int n, int m, int mat[][m])` onde:
+8. No módulo "arrays" defina e implemente a função `int matrixMaximumIndex(int m, int n, int mat[][n])` onde:
 
 	- `m` é o número de linhas da matriz;
 	- `n` é o número de colunas da matriz;
@@ -90,14 +90,14 @@ void printArray(int arr[], int arrLength) {
 	Assumindo que utiliza uma variável `i` para percorrer as linhas e `j` para as colunas, e.g.,:
 	
 	```cpp
-	for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
+	for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
 			...
 	```
 	
 	o índice a devolver é calculado da seguinte forma:
 
-	`computedIndex = (i * m + j)`; atualize-o apenas quando em `mat[i][j]` encontrar um "novo máximo")
+	`computedIndex = (i * n + j)`; atualize-o apenas quando em `mat[i][j]` encontrar um "novo máximo")
 
 :question: Qual a complexidade algorítmica da função `matrixMaximumIndex` que implementou?
 
